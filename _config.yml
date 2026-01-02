@@ -9,6 +9,8 @@ plugins:
 
 custom_css:
   - /assets/css/custom.css
+custom_js:
+  - /assets/js/reveal.js
 
 
   
