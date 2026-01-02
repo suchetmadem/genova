@@ -1,3 +1,10 @@
 title: Genova
 description: Student-led STEM articles and research
 theme: minima
+
+header_pages:
+  - index.md
+  - articles.md
+  - about.md
+  - team.md
+  - contact.md
