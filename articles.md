@@ -10,11 +10,13 @@ permalink: /articles/
   <div style="border: 1px solid #ddd; padding: 1rem;">
     
     {% if post.image %}
-      <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 100%; height: auto;">
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: auto;">
+
     {% endif %}
 
     <h3>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+
     </h3>
 
     <p style="font-size: 0.9rem; color: #666;">
