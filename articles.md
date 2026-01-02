@@ -27,3 +27,8 @@ permalink: /articles/
 {% endfor %}
 
 </div>
+
+<div data-reveal>
+  <h3>Welcome to Genova</h3>
+</div>
+
