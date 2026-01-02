@@ -11,3 +11,10 @@ title: Genova
     <a class="btn-outline" href="{{ '/about/' | relative_url }}">About us</a>
   </div>
 </section>
+
+
+
+<section data-reveal>
+  <h1>STEM articles made simple.</h1>
+  <p>Student-led explainers across AI, biology, engineering, and math.</p>
+</section>
