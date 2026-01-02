@@ -3,6 +3,7 @@ layout: post
 title: "Welcome to Genova"
 author: Genova Editorial Team
 categories: [STEM, Education]
+image: /assets/images/welcome.jpg
 ---
 
 Welcome to **Genova**!
