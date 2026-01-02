@@ -2,6 +2,9 @@ title: Genova
 description: Student-led STEM articles and research
 theme: minima
 
+url: "https://suchetmadem.github.io"
+baseurl: "/genova"
+
 header_pages:
   - index.md
   - articles.md
