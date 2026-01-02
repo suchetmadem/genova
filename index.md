@@ -3,12 +3,11 @@ layout: home
 title: Genova
 ---
 
-
-Welcome to **Genova**, a student-led organization publishing accessible articles on STEM topics including science, technology, engineering, and mathematics.
-
-## What We Do
-- Publish STEM articles written by students
-- Break down complex topics into clear explanations
-- Promote curiosity and scientific thinking
-
-👉 Check out our **Articles** to start reading!
+<section class="hero">
+  <h1>STEM articles<br/>made simple.</h1>
+  <p>Genova publishes clear, student-written explainers in AI, biology, engineering, and math.</p>
+  <div class="hero-actions">
+    <a class="btn" href="{{ '/articles/' | relative_url }}">Read articles</a>
+    <a class="btn-outline" href="{{ '/about/' | relative_url }}">About us</a>
+  </div>
+</section>
