@@ -45,3 +45,16 @@
 
 /* smooth scrolling */
 html { scroll-behavior: smooth; }
+
+
+/* Scroll reveal animation */
+[data-reveal] {
+  transform: translateY(16px);
+  opacity: 0;
+  transition: 700ms ease;
+}
+
+.reveal-in {
+  transform: translateY(0);
+  opacity: 1;
+}
