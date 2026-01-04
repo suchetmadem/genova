@@ -154,3 +154,14 @@
 .layout--home .archive__subtitle {
   display: none !important;
 }
+
+
+
+/* Splash layout: make the landing page feel wide like Cuberto */
+.layout--splash .page__inner-wrap {
+  max-width: 1400px !important;
+}
+
+.layout--splash .page__content {
+  padding-top: 0 !important;
+}
