@@ -147,3 +147,25 @@
 .genova-blurb h2 {
   letter-spacing: -0.02em;
 }
+
+
+
+/* === FORCE Cuberto-style nav alignment === */
+
+/* Make masthead a flex row */
+.masthead__menu {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Push nav (tabs) to the right */
+.masthead__menu nav {
+  margin-left: auto !important;
+}
+
+/* Keep tabs grouped together */
+.masthead__menu .visible-links {
+  display: flex !important;
+  gap: 3rem;
+}
+
