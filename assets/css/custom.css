@@ -149,3 +149,8 @@
 .layout--home .page__content > p:first-child {
   display: none !important;
 }
+/* Hide the auto "home/archive title" that Minimal Mistakes prints on the homepage */
+.layout--home .archive__title,
+.layout--home .archive__subtitle {
+  display: none !important;
+}
