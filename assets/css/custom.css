@@ -198,3 +198,30 @@
   max-width: 52ch;
 }
 
+/* Force hero statement to be centered even inside theme containers */
+.layout--home .page__content .hero.hero--statement {
+  min-height: calc(100vh - 160px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 4rem 2rem !important;
+}
+
+.layout--home .page__content .hero.hero--statement h1 {
+  font-size: clamp(3.5rem, 8vw, 6.5rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.04em !important;
+  max-width: 22ch !important;
+  margin: 0 0 1.75rem 0 !important;
+}
+
+.layout--home .page__content .hero.hero--statement p {
+  font-size: 1.15rem !important;
+  line-height: 1.6 !important;
+  color: #333 !important;
+  max-width: 52ch !important;
+  margin: 0 !important;
+}
