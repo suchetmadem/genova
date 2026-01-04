@@ -6,18 +6,20 @@ title: ""
 
 
 
-<!-- Hero (Cuberto-style) -->
-<section class="hero hero--cuberto" data-reveal>
+<!-- Homepage Hero Text -->
+<section class="hero hero--statement" data-reveal>
   <h1>
-    STEM articles<br />
-    made simple.
+    Organization working to empower<br />
+    youth minds in STEM
   </h1>
 
   <p>
-    Genova publishes clear, student-written explainers in AI, biology,
-    engineering, and math.
+    The Genova team focuses on supporting the youth by providing
+    opportunities for research in STEM, new innovations, and
+    existing advancements.
   </p>
 </section>
+
 
 
 
