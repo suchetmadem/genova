@@ -1,68 +1,24 @@
-/* Homepage-only top tabs */
-.genova-topnav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding: 2.25rem 0 1.75rem;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  margin-bottom: 2.5rem;
-}
-
-.genova-topnav__brand a{
-  font-weight: 700;
-  text-decoration:none;
-  color:#111;
-  letter-spacing:-0.02em;
-}
-
-.genova-topnav__links{
-  display:flex;
-  gap: 2.75rem;
-}
-
-.genova-topnav__links a{
-  text-decoration:none;
-  color:#111;
-  font-weight: 500;
-  opacity: 0.9;
-}
-
-.genova-topnav__links a:hover{
-  opacity: 0.55;
-}
-
-.stem-grid__stack{
-  display:grid;
-  gap: 1.5rem;
-}
-
-.genova-blurb{
-  padding: 1rem 0 3rem;
-}
-
-.genova-blurb h2{
-  letter-spacing: -0.02em;
-}
-
+/* =========================================================
+   Genova custom styles (clean)
+   ========================================================= */
 
 
 /* =========================================================
-   Cuberto-style header (Minimal Mistakes)
+   Header / Nav (Minimal Mistakes) — Cuberto-like
+   Logo on the left, tabs on the right
    ========================================================= */
 
-/* Taller header + more whitespace */
 .masthead {
   border-bottom: none !important;
   padding: 2.6rem 0 !important;
 }
 
-/* Make the header area wide + aligned like a grid */
 .masthead__inner-wrap {
   max-width: 1400px !important;
   padding: 0 3rem !important;
 }
 
-/* Logo left, tabs right (Cuberto style) */
+/* Make masthead act like a row: logo left, links right */
 .masthead__inner-wrap .masthead__menu {
   display: flex !important;
   align-items: center !important;
@@ -72,14 +28,15 @@
 
 /* Push the links group to the far right */
 .masthead__menu .visible-links {
-  margin-left: auto !important;
+  display: flex !important;
   justify-content: flex-end !important;
+  margin-left: auto !important;
 }
 
+/* Space between menu items */
 .masthead__menu-item {
   margin-left: 3rem !important;
 }
-
 
 /* Brand (left) */
 .masthead__title a {
@@ -90,12 +47,7 @@
   text-decoration: none !important;
 }
 
-/* Nav list (right) */
-.masthead__menu-item {
-  margin-left: 3rem !important;
-}
-
-/* Link styling */
+/* Links (right) */
 .masthead__menu-item a {
   font-size: 1rem !important;
   font-weight: 500 !important;
@@ -108,68 +60,27 @@
   opacity: 0.55 !important;
 }
 
-/* Remove the big centered homepage title block (what you're seeing as "Genova") */
+
+/* =========================================================
+   Remove injected title/meta blocks from the theme
+   (prevents extra "Genova" headings showing up)
+   ========================================================= */
+
 .page__title,
 .page__meta {
   display: none !important;
 }
 
-/* Optional: reduce top padding before content */
-.initial-content {
-  padding-top: 0.5rem !important;
-}
-
-
-
-/* =========================================================
-   Cuberto-style Hero (final)
-   ========================================================= */
-
-.hero--cuberto {
-  min-height: calc(100vh - 160px); /* header offset */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 5rem 2rem 3rem;
-}
-
-.hero--cuberto h1 {
-  font-size: clamp(3.8rem, 8vw, 7.2rem);
-  font-weight: 700;
-  line-height: 1.02;
-  letter-spacing: -0.04em;
-  margin-bottom: 2rem;
-  max-width: 22ch;
-}
-
-.hero--cuberto p {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: #333;
-  max-width: 52ch;
-}
-
-
-/* =========================================================
-   Remove injected home title text (fix extra "Genova")
-   ========================================================= */
-
-/* Hide any automatic heading above the hero on home */
-.layout--home .page__content > h1:first-child,
-.layout--home .page__content > p:first-child {
-  display: none !important;
-}
-/* Hide the auto "home/archive title" that Minimal Mistakes prints on the homepage */
 .layout--home .archive__title,
 .layout--home .archive__subtitle {
   display: none !important;
 }
 
 
+/* =========================================================
+   Splash layout: make landing page feel wide like Cuberto
+   ========================================================= */
 
-/* Splash layout: make the landing page feel wide like Cuberto */
 .layout--splash .page__inner-wrap {
   max-width: 1400px !important;
 }
@@ -178,14 +89,17 @@
   padding-top: 0 !important;
 }
 
+.initial-content {
+  padding-top: 0.5rem !important;
+}
 
 
 /* =========================================================
-   Centered homepage statement (Cuberto-style typography)
+   Homepage statement hero (your centered text block)
    ========================================================= */
 
 .hero--statement {
-  min-height: calc(100vh - 160px); /* keeps it vertically centered under nav */
+  min-height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,53 +122,28 @@
   line-height: 1.6;
   color: #333;
   max-width: 52ch;
-}
-
-/* Force hero statement to be centered even inside theme containers */
-.layout--home .page__content .hero.hero--statement {
-  min-height: calc(100vh - 160px) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;
-  padding: 4rem 2rem !important;
-}
-
-.layout--home .page__content .hero.hero--statement h1 {
-  font-size: clamp(3rem, 6.5vw, 5.5rem) !important;
-  font-weight: 700 !important;
-  line-height: 1.05 !important;
-  letter-spacing: -0.04em !important;
-  max-width: 22ch !important;
-  margin: 0 0 1.75rem 0 !important;
-}
-
-.layout--home .page__content .hero.hero--statement p {
-  font-size: 1.15rem !important;
-  line-height: 1.6 !important;
-  color: #333 !important;
-  max-width: 52ch !important;
-  margin: 0 !important;
+  margin: 0;
 }
 
 
-.masthead__inner-wrap .masthead__menu {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
+/* =========================================================
+   Image grid helpers
+   ========================================================= */
+
+.stem-grid__stack {
+  display: grid;
+  gap: 1.5rem;
 }
 
 
-/* Keep nav links grouped together on the right */
-.masthead__menu .visible-links {
-  display: flex !important;
-  justify-content: flex-end !important;
+/* =========================================================
+   Optional blurb section
+   ========================================================= */
+
+.genova-blurb {
+  padding: 1rem 0 3rem;
 }
 
-/* Keep nav links grouped together on the right */
-.masthead__menu .visible-links {
-  display: flex !important;
-  justify-content: flex-end !important;
-  margin-left: auto !important;   /* <-- THIS pushes tabs to the right */
+.genova-blurb h2 {
+  letter-spacing: -0.02em;
 }
