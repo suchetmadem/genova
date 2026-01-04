@@ -3,17 +3,6 @@ layout: home
 title: Genova
 ---
 
-<!-- Homepage-only top tabs (Cuberto-style) -->
-<nav class="genova-topnav" aria-label="Primary">
-  <div class="genova-topnav__brand">
-    <a href="{{ '/' | relative_url }}">Genova</a>
-  </div>
-  <div class="genova-topnav__links">
-    <a href="{{ '/articles/' | relative_url }}">Articles</a>
-    <a href="{{ '/about/' | relative_url }}">About us</a>
-    <a href="{{ '/contact/' | relative_url }}">Contact</a>
-  </div>
-</nav>
 
 <!-- Hero -->
 <section class="hero" data-reveal>
