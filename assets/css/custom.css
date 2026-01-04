@@ -252,3 +252,9 @@
   justify-content: flex-end !important;
 }
 
+/* Keep nav links grouped together on the right */
+.masthead__menu .visible-links {
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-left: auto !important;   /* <-- THIS pushes tabs to the right */
+}
