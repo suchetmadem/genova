@@ -3,6 +3,10 @@ description: Student-led STEM articles and research
 url: "https://suchetmadem.github.io"
 baseurl: "/genova"
 
+minimal_mistakes_skin: "default"
+head_scripts:
+  - /assets/css/custom.css
+
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-include-cache
