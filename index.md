@@ -3,24 +3,31 @@ layout: home
 title: Genova
 ---
 
-<section class="hero">
+<!-- Homepage-only top tabs (Cuberto-style) -->
+<nav class="genova-topnav" aria-label="Primary">
+  <div class="genova-topnav__brand">
+    <a href="{{ '/' | relative_url }}">Genova</a>
+  </div>
+  <div class="genova-topnav__links">
+    <a href="{{ '/articles/' | relative_url }}">Articles</a>
+    <a href="{{ '/about/' | relative_url }}">About us</a>
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" data-reveal>
   <h1>STEM articles<br/>made simple.</h1>
   <p>Genova publishes clear, student-written explainers in AI, biology, engineering, and math.</p>
+  <known>
   <div class="hero-actions">
     <a class="btn" href="{{ '/articles/' | relative_url }}">Read articles</a>
     <a class="btn-outline" href="{{ '/about/' | relative_url }}">About us</a>
   </div>
 </section>
 
+<!-- Cuberto-ish staggered image grid -->
 <section class="home-hero">
-  <div data-reveal>
-    <h1>Genova</h1>
-    <p>
-      Student-led STEM writing—clear explainers, real-world examples, and visual storytelling across
-      AI, biology, engineering, and math.
-    </p>
-  </div>
-
   <div class="stem-grid">
     <!-- Big feature card -->
     <div class="stem-card stem-card--tall" data-reveal data-delay="0">
@@ -30,7 +37,7 @@ title: Genova
     </div>
 
     <!-- Staggered smaller cards -->
-    <div style="display:grid; gap:1.5rem;">
+    <div class="stem-grid__stack">
       <div class="stem-card stem-card--small" data-reveal data-delay="120">
         <a href="{{ '/articles/' | relative_url }}">
           <img src="{{ '/assets/images/stem-2.jpg' | relative_url }}" alt="STEM visual 2">
@@ -52,8 +59,10 @@ title: Genova
   </div>
 </section>
 
-
-<section data-reveal>
-  <h1>STEM articles made simple.</h1>
-  <p>Student-led explainers across AI, biology, engineering, and math.</p>
+<!-- Short section under the grid (optional) -->
+<section class="genova-blurb" data-reveal>
+  <h2>What we publish</h2>
+  <p>
+    Clear explainers, visual breakdowns, and beginner-friendly STEM writing—built by students, for students.
+  </p>
 </section>
