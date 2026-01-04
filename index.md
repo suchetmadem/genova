@@ -8,7 +8,7 @@ title: ""
 <!-- Homepage Hero Text -->
 <section class="hero hero--statement" data-reveal>
   <h1>
-    Organization working to empower<br />
+    Working to empower<br />
     youth minds in STEM
   </h1>
 
