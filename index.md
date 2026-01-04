@@ -5,7 +5,6 @@ title: ""
 ---
 
 
-
 <!-- Homepage Hero Text -->
 <section class="hero hero--statement" data-reveal>
   <h1>
