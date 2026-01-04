@@ -62,12 +62,24 @@
   padding: 0 3rem !important;
 }
 
-/* Put logo left and nav right, vertically centered */
+/* Logo left, tabs right (Cuberto style) */
 .masthead__inner-wrap .masthead__menu {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
+  width: 100% !important;
 }
+
+/* Push the links group to the far right */
+.masthead__menu .visible-links {
+  margin-left: auto !important;
+  justify-content: flex-end !important;
+}
+
+.masthead__menu-item {
+  margin-left: 3rem !important;
+}
+
 
 /* Brand (left) */
 .masthead__title a {
