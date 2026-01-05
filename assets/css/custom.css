@@ -216,3 +216,16 @@
   font-size: 1.5rem !important;   /* ← adjust this value */
   font-weight: 700 !important;
 }
+
+
+/* Nudge logo up and left (Cuberto-style alignment) */
+.masthead #site-nav.greedy-nav .site-title,
+.masthead #site-nav.greedy-nav .site-title a {
+  font-size: 2rem !important;      /* keep your chosen size */
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+
+  position: relative;
+  top: -6px;        /* move UP → adjust between -4px and -10px */
+  left: -14px;      /* move LEFT → adjust between -8px and -20px */
+}
