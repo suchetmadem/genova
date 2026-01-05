@@ -4,8 +4,8 @@
 
 
 /* =========================================================
-   Header / Nav (Minimal Mistakes) — Cuberto-like
-   Logo on the left, tabs on the right
+   Cuberto-style header (Minimal Mistakes) — FIXED
+   Logo left, links grouped on right
    ========================================================= */
 
 .masthead {
@@ -18,27 +18,18 @@
   padding: 0 3rem !important;
 }
 
-/* Make masthead act like a row: logo left, links right */
-.masthead__inner-wrap .masthead__menu {
+/* Make the header row a flex row */
+.masthead__menu {
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
   width: 100% !important;
 }
 
-/* Push the links group to the far right */
-.masthead__menu .visible-links {
-  display: flex !important;
-  justify-content: flex-end !important;
-  margin-left: auto !important;
+/* Keep the logo on the far left */
+.masthead__title {
+  margin-right: auto !important;
 }
 
-/* Space between menu items */
-.masthead__menu-item {
-  margin-left: 3rem !important;
-}
-
-/* Brand (left) */
 .masthead__title a {
   font-size: 1.6rem !important;
   font-weight: 700 !important;
@@ -47,7 +38,22 @@
   text-decoration: none !important;
 }
 
-/* Links (right) */
+/* Push links group to the far right AND prevent it from stretching */
+.masthead__menu .visible-links {
+  margin-left: auto !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  width: auto !important;
+  flex: 0 0 auto !important;
+  gap: 3rem !important;          /* controls spacing between tabs */
+}
+
+/* Remove old spacing method so it doesn't "spread out" */
+.masthead__menu-item {
+  margin-left: 0 !important;
+}
+
+/* Link styling */
 .masthead__menu-item a {
   font-size: 1rem !important;
   font-weight: 500 !important;
@@ -59,6 +65,12 @@
 .masthead__menu-item a:hover {
   opacity: 0.55 !important;
 }
+
+/* Optional: reduce top padding before content */
+.initial-content {
+  padding-top: 0.5rem !important;
+}
+
 
 
 /* =========================================================
@@ -150,82 +162,3 @@
 
 
 
-/* === FORCE Cuberto-style nav alignment === */
-
-/* Make masthead a flex row */
-.masthead__menu {
-  display: flex !important;
-  align-items: center !important;
-}
-
-/* Push nav (tabs) to the right */
-.masthead__menu nav {
-  margin-left: auto !important;
-}
-
-/* Keep tabs grouped together */
-.masthead__menu .visible-links {
-  display: flex !important;
-  gap: 3rem;
-}
-
-/* =========================================================
-   Cuberto-style header (Minimal Mistakes)
-   ========================================================= */
-
-/* Taller header + more whitespace */
-.masthead {
-  border-bottom: none !important;
-  padding: 2.6rem 0 !important;
-}
-
-/* Make the header area wide + aligned like a grid */
-.masthead__inner-wrap {
-  max-width: 1400px !important;
-  padding: 0 3rem !important;
-}
-
-/* Put logo left and nav right, vertically centered */
-.masthead__inner-wrap .masthead__menu {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-}
-
-/* Brand (left) */
-.masthead__title a {
-  font-size: 1.6rem !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.03em !important;
-  color: #111 !important;
-  text-decoration: none !important;
-}
-
-/* Nav list (right) */
-.masthead__menu-item {
-  margin-left: 3rem !important;
-}
-
-/* Link styling */
-.masthead__menu-item a {
-  font-size: 1rem !important;
-  font-weight: 500 !important;
-  color: #111 !important;
-  text-decoration: none !important;
-  opacity: 0.9 !important;
-}
-
-.masthead__menu-item a:hover {
-  opacity: 0.55 !important;
-}
-
-/* Remove the big centered homepage title block (what you're seeing as "Genova") */
-.page__title,
-.page__meta {
-  display: none !important;
-}
-
-/* Optional: reduce top padding before content */
-.initial-content {
-  padding-top: 0.5rem !important;
-}
