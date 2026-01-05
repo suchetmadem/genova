@@ -196,3 +196,11 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+
+/* Force logo text to pure black */
+.masthead #site-nav.greedy-nav .site-title,
+.masthead #site-nav.greedy-nav .site-title a {
+  color: #000 !important;
+}
+
