@@ -213,6 +213,6 @@
 /* Make logo bigger (Cuberto-style) */
 .masthead #site-nav.greedy-nav .site-title,
 .masthead #site-nav.greedy-nav .site-title a {
-  font-size: 1.8rem !important;   /* ← adjust this value */
+  font-size: 1.5rem !important;   /* ← adjust this value */
   font-weight: 700 !important;
 }
