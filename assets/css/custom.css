@@ -169,3 +169,63 @@
   gap: 3rem;
 }
 
+/* =========================================================
+   Cuberto-style header (Minimal Mistakes)
+   ========================================================= */
+
+/* Taller header + more whitespace */
+.masthead {
+  border-bottom: none !important;
+  padding: 2.6rem 0 !important;
+}
+
+/* Make the header area wide + aligned like a grid */
+.masthead__inner-wrap {
+  max-width: 1400px !important;
+  padding: 0 3rem !important;
+}
+
+/* Put logo left and nav right, vertically centered */
+.masthead__inner-wrap .masthead__menu {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+/* Brand (left) */
+.masthead__title a {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  color: #111 !important;
+  text-decoration: none !important;
+}
+
+/* Nav list (right) */
+.masthead__menu-item {
+  margin-left: 3rem !important;
+}
+
+/* Link styling */
+.masthead__menu-item a {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #111 !important;
+  text-decoration: none !important;
+  opacity: 0.9 !important;
+}
+
+.masthead__menu-item a:hover {
+  opacity: 0.55 !important;
+}
+
+/* Remove the big centered homepage title block (what you're seeing as "Genova") */
+.page__title,
+.page__meta {
+  display: none !important;
+}
+
+/* Optional: reduce top padding before content */
+.initial-content {
+  padding-top: 0.5rem !important;
+}
