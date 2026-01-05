@@ -1,13 +1,9 @@
 /* =========================================================
-   Genova custom styles (clean)
+   Genova — clean custom styles
+   (Fix navbar: logo left, tabs grouped on right)
    ========================================================= */
 
-
-/* =========================================================
-   Cuberto-style header (Minimal Mistakes) — FIXED
-   Logo left, links grouped on right
-   ========================================================= */
-
+/* ---------- Header spacing ---------- */
 .masthead {
   border-bottom: none !important;
   padding: 2.6rem 0 !important;
@@ -18,52 +14,62 @@
   padding: 0 3rem !important;
 }
 
-/* Make the header row a flex row */
-.masthead__menu {
+/* ---------- FORCE greedy-nav layout (this is the key) ---------- */
+.masthead .greedy-nav {
   display: flex !important;
   align-items: center !important;
   width: 100% !important;
 }
 
-/* Keep the logo on the far left */
+/* Logo / site title stays LEFT */
+.masthead .greedy-nav .site-title,
 .masthead__title {
   margin-right: auto !important;
 }
 
-.masthead__title a {
-  font-size: 1.6rem !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.03em !important;
-  color: #111 !important;
-  text-decoration: none !important;
-}
-
-/* Push links group to the far right AND prevent it from stretching */
-.masthead__menu .visible-links {
+/* Tabs group stays RIGHT */
+.masthead .greedy-nav .visible-links {
   margin-left: auto !important;
   display: flex !important;
   justify-content: flex-end !important;
   width: auto !important;
   flex: 0 0 auto !important;
-  gap: 3rem !important;          /* controls spacing between tabs */
+  gap: 3rem !important; /* spacing between tabs */
+  padding: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-/* Remove old spacing method so it doesn't "spread out" */
+/* Prevent items from stretching */
+.masthead .greedy-nav .visible-links li {
+  flex: 0 0 auto !important;
+}
+
+/* Remove theme's spacing that can cause spreading */
 .masthead__menu-item {
   margin-left: 0 !important;
 }
 
 /* Link styling */
-.masthead__menu-item a {
-  font-size: 1rem !important;
-  font-weight: 500 !important;
-  color: #111 !important;
+.masthead .greedy-nav a {
   text-decoration: none !important;
+  color: #111 !important;
   opacity: 0.9 !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
 }
 
-.masthead__menu-item a:hover {
+.masthead .greedy-nav a:hover {
   opacity: 0.55 !important;
+}
+
+/* Brand styling */
+.masthead .greedy-nav .site-title,
+.masthead__title a {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  color: #111 !important;
 }
 
 /* Optional: reduce top padding before content */
@@ -71,13 +77,9 @@
   padding-top: 0.5rem !important;
 }
 
-
-
 /* =========================================================
    Remove injected title/meta blocks from the theme
-   (prevents extra "Genova" headings showing up)
    ========================================================= */
-
 .page__title,
 .page__meta {
   display: none !important;
@@ -88,11 +90,9 @@
   display: none !important;
 }
 
-
 /* =========================================================
-   Splash layout: make landing page feel wide like Cuberto
+   Splash layout: wide like Cuberto
    ========================================================= */
-
 .layout--splash .page__inner-wrap {
   max-width: 1400px !important;
 }
@@ -101,15 +101,9 @@
   padding-top: 0 !important;
 }
 
-.initial-content {
-  padding-top: 0.5rem !important;
-}
-
-
 /* =========================================================
-   Homepage statement hero (your centered text block)
+   Homepage statement hero (centered text block)
    ========================================================= */
-
 .hero--statement {
   min-height: calc(100vh - 160px);
   display: flex;
@@ -120,8 +114,9 @@
   padding: 4rem 2rem;
 }
 
+/* 🔥 CHANGE BIG TEXT SIZE HERE */
 .hero--statement h1 {
-  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-size: clamp(3.5rem, 8vw, 6.5rem); /* <— edit these numbers */
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.04em;
@@ -137,21 +132,17 @@
   margin: 0;
 }
 
-
 /* =========================================================
    Image grid helpers
    ========================================================= */
-
 .stem-grid__stack {
   display: grid;
   gap: 1.5rem;
 }
 
-
 /* =========================================================
    Optional blurb section
    ========================================================= */
-
 .genova-blurb {
   padding: 1rem 0 3rem;
 }
@@ -159,6 +150,3 @@
 .genova-blurb h2 {
   letter-spacing: -0.02em;
 }
-
-
-
