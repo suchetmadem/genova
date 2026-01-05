@@ -210,14 +210,6 @@
 }
 
 
-/* Make logo bigger (Cuberto-style) */
-.masthead #site-nav.greedy-nav .site-title,
-.masthead #site-nav.greedy-nav .site-title a {
-  font-size: 1.2rem !important;   /* ← adjust this value */
-  font-weight: 700 !important;
-}
-
-
 /* Nudge logo up and left (Cuberto-style alignment) */
 .masthead #site-nav.greedy-nav .site-title,
 .masthead #site-nav.greedy-nav .site-title a {
