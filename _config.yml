@@ -14,5 +14,3 @@ custom_js:
   - /assets/js/reveal.js
 
 minimal_mistakes_skin: "default"
-head_scripts:
-  - /assets/css/custom.css
