@@ -204,3 +204,7 @@
   color: #000 !important;
 }
 
+.masthead #site-nav.greedy-nav .site-title a {
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
