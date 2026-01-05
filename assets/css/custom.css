@@ -3,79 +3,70 @@
    (Fix navbar: logo left, tabs grouped on right)
    ========================================================= */
 
-/* ---------- Header spacing ---------- */
+/* =========================================================
+   Cuberto-style header (Minimal Mistakes) — tighter spacing
+   ========================================================= */
+
+/* Less vertical space above/below the navbar */
 .masthead {
   border-bottom: none !important;
-  padding: 2.6rem 0 !important;
+  padding: 1.1rem 0 !important;     /* was 2.6rem */
 }
 
+/* Bring logo + nav closer to screen edges */
 .masthead__inner-wrap {
   max-width: 1400px !important;
-  padding: 0 3rem !important;
+  padding: 0 1.25rem !important;    /* was 0 3rem */
 }
 
-/* ---------- FORCE greedy-nav layout (this is the key) ---------- */
-.masthead .greedy-nav {
+/* Keep header as a flex row */
+.masthead__menu {
   display: flex !important;
   align-items: center !important;
   width: 100% !important;
 }
 
-/* Logo / site title stays LEFT */
-.masthead .greedy-nav .site-title,
+/* Keep logo on the left */
 .masthead__title {
   margin-right: auto !important;
 }
 
-/* Tabs group stays RIGHT */
-.masthead .greedy-nav .visible-links {
-  margin-left: auto !important;
-  display: flex !important;
-  justify-content: flex-end !important;
-  width: auto !important;
-  flex: 0 0 auto !important;
-  gap: 3rem !important; /* spacing between tabs */
-  padding: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* Prevent items from stretching */
-.masthead .greedy-nav .visible-links li {
-  flex: 0 0 auto !important;
-}
-
-/* Remove theme's spacing that can cause spreading */
-.masthead__menu-item {
-  margin-left: 0 !important;
-}
-
-/* Link styling */
-.masthead .greedy-nav a {
-  text-decoration: none !important;
-  color: #111 !important;
-  opacity: 0.9 !important;
-  font-weight: 500 !important;
-  font-size: 1rem !important;
-}
-
-.masthead .greedy-nav a:hover {
-  opacity: 0.55 !important;
-}
-
-/* Brand styling */
-.masthead .greedy-nav .site-title,
 .masthead__title a {
   font-size: 1.6rem !important;
   font-weight: 700 !important;
   letter-spacing: -0.03em !important;
   color: #111 !important;
+  text-decoration: none !important;
 }
 
-/* Optional: reduce top padding before content */
-.initial-content {
-  padding-top: 0.5rem !important;
+/* Push links group to the right with smaller spacing between tabs */
+.masthead__menu .visible-links {
+  margin-left: auto !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  width: auto !important;
+  flex: 0 0 auto !important;
+  gap: 1.6rem !important;           /* was 3rem (controls spacing between tabs) */
 }
+
+/* Don’t add extra spacing per item */
+.masthead__menu-item {
+  margin-left: 0 !important;
+}
+
+/* Link styling */
+.masthead__menu-item a {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #111 !important;
+  text-decoration: none !important;
+  opacity: 0.9 !important;
+}
+
+.masthead__menu-item a:hover {
+  opacity: 0.55 !important;
+}
+
 
 /* =========================================================
    Remove injected title/meta blocks from the theme
