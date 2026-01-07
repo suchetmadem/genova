@@ -197,6 +197,67 @@
   padding-right: 0 !important;
 }
 
+/* =========================================================
+   Custom cursor (pointer devices only)
+   ========================================================= */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+
+  .masthead__menu-item a,
+  .masthead #site-nav.greedy-nav .visible-links a,
+  .stem-card a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    will-change: transform;
+  }
+
+  .masthead__menu-item a:hover,
+  .masthead #site-nav.greedy-nav .visible-links a:hover,
+  .stem-card a:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .custom-cursor__dot,
+  .custom-cursor__halo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 999px;
+    transform: translate(-50%, -50%);
+  }
+
+  .custom-cursor__dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(17, 17, 17, 0.9);
+  }
+
+  .custom-cursor__halo {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .custom-cursor--hover .custom-cursor__halo {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0.6;
+  }
+}
+
 
 /* Force logo text to pure black */
 .masthead #site-nav.greedy-nav .site-title,

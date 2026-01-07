@@ -12,5 +12,6 @@ custom_css:
   - /assets/css/custom.css
 custom_js:
   - /assets/js/reveal.js
+  - /assets/js/cursor.js
 
 minimal_mistakes_skin: "default"
