@@ -142,61 +142,6 @@
   letter-spacing: -0.02em;
 }
 
-
-/* =========================================================
-   NAV FIX (Minimal Mistakes / greedy-nav)
-   Logo left + tabs right (and tight spacing)
-   Put this at the VERY BOTTOM of custom.css
-   ========================================================= */
-
-.masthead {
-  padding: 1.1rem 0 !important;
-  border-bottom: none !important;
-}
-
-.masthead__inner-wrap {
-  padding: 0 1.25rem !important;
-  max-width: 1400px !important;
-}
-
-/* The actual nav wrapper in Minimal Mistakes */
-.masthead #site-nav.greedy-nav {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  width: 100% !important;
-}
-
-/* Logo (site title) stays hard-left */
-.masthead #site-nav.greedy-nav .site-title {
-  margin-right: auto !important;
-}
-
-/* Tabs group moves to the far right */
-.masthead #site-nav.greedy-nav .visible-links {
-  margin-left: auto !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  width: auto !important;
-  flex: 0 0 auto !important;
-  gap: 1.2rem !important;      /* spacing between tabs */
-  padding: 0 !important;
-}
-
-/* Make sure list items don’t stretch */
-.masthead #site-nav.greedy-nav .visible-links li {
-  flex: 0 0 auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Remove any old “spread out” spacing */
-.masthead #site-nav.greedy-nav .visible-links li a {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
 /* =========================================================
    Custom cursor (pointer devices only)
    ========================================================= */
@@ -258,6 +203,60 @@
   }
 }
 
+
+/* =========================================================
+   NAV FIX (Minimal Mistakes / greedy-nav)
+   Logo left + tabs right (and tight spacing)
+   Put this at the VERY BOTTOM of custom.css
+   ========================================================= */
+
+.masthead {
+  padding: 1.1rem 0 !important;
+  border-bottom: none !important;
+}
+
+.masthead__inner-wrap {
+  padding: 0 1.25rem !important;
+  max-width: 1400px !important;
+}
+
+/* The actual nav wrapper in Minimal Mistakes */
+.masthead #site-nav.greedy-nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+/* Logo (site title) stays hard-left */
+.masthead #site-nav.greedy-nav .site-title {
+  margin-right: auto !important;
+}
+
+/* Tabs group moves to the far right */
+.masthead #site-nav.greedy-nav .visible-links {
+  margin-left: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  width: auto !important;
+  flex: 0 0 auto !important;
+  gap: 1.2rem !important;      /* spacing between tabs */
+  padding: 0 !important;
+}
+
+/* Make sure list items don’t stretch */
+.masthead #site-nav.greedy-nav .visible-links li {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove any old “spread out” spacing */
+.masthead #site-nav.greedy-nav .visible-links li a {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 /* Force logo text to pure black */
 .masthead #site-nav.greedy-nav .site-title,
