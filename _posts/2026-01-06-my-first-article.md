@@ -4,6 +4,7 @@ date: 2026-01-06
 categories: [STEM]
 tags: [ai, biology]
 layout: single
+image: /assets/images/2026-01-06-my-first-article.png
 ---
 
 1. The Carbon Alchemist: Synthetic Metabolisms and the 2026 Cell-Free Revolution

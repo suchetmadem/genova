@@ -10,6 +10,12 @@ Browse our latest STEM articles below.
 {% for post in site.posts %}
   <a class="article-card" href="{{ post.url | relative_url }}">
     <div class="article-frame">
+      <img
+        class="article-frame__image"
+        src="{{ post.image | relative_url }}"
+        alt="{{ post.title }}"
+        loading="lazy"
+      />
       <iframe
         src="{{ post.url | relative_url }}"
         title="{{ post.title }} preview"
