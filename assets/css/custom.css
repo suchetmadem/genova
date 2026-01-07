@@ -126,6 +126,51 @@
 /* =========================================================
    Image grid helpers
    ========================================================= */
+.stem-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: clamp(1rem, 2.2vw, 2rem);
+  align-items: end;
+}
+
+.stem-card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.stem-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+}
+
+.stem-card--tall {
+  grid-row: span 2;
+  min-height: clamp(18rem, 28vw, 28rem);
+}
+
+.stem-card--small {
+  align-self: start;
+  min-height: clamp(10rem, 18vw, 18rem);
+}
+
+.stem-card--tall img,
+.stem-card--small img {
+  height: 100%;
+}
+
+.stem-card--small:nth-child(2) {
+  grid-column: 5 / span 4;
+}
+
+.stem-card--small:nth-child(3) {
+  grid-column: 9 / span 4;
+}
+
 .stem-grid__stack {
   display: grid;
   gap: 1.5rem;
