@@ -14,3 +14,4 @@ custom_js:
   - /assets/js/reveal.js
 
 minimal_mistakes_skin: "default"
+future: true
