@@ -197,6 +197,20 @@
   padding-right: 0 !important;
 }
 
+/* =========================================================
+   Reveal animations (Cuberto-style)
+   ========================================================= */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+[data-reveal].reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
 
 /* Force logo text to pure black */
 .masthead #site-nav.greedy-nav .site-title,
