@@ -19,6 +19,25 @@ title: ""
   </p>
 </section>
 
+<!-- Homepage quick links -->
+<section class="home-quick-links" data-reveal>
+  <iframe
+    title="Articles"
+    src="{{ '/articles/' | relative_url }}"
+    loading="lazy"
+  ></iframe>
+  <iframe
+    title="Contact"
+    src="{{ '/contact/' | relative_url }}"
+    loading="lazy"
+  ></iframe>
+  <iframe
+    title="About Us"
+    src="{{ '/about/' | relative_url }}"
+    loading="lazy"
+  ></iframe>
+</section>
+
 
 
 
