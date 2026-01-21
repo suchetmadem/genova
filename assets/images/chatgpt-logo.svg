@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ChatGPT</title>
+  <desc id="desc">A stylized ChatGPT wordmark inside a rounded square.</desc>
+  <rect width="512" height="512" rx="96" fill="#0f172a"/>
+  <rect x="48" y="48" width="416" height="416" rx="80" fill="#111827" stroke="#34d399" stroke-width="16"/>
+  <g fill="#e5e7eb">
+    <path d="M160 332c-24.4 0-44-19.6-44-44v-64c0-24.4 19.6-44 44-44h48c24.4 0 44 19.6 44 44v8h-32v-8c0-6.6-5.4-12-12-12h-48c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12h48c6.6 0 12-5.4 12-12v-8h32v8c0 24.4-19.6 44-44 44h-48z"/>
+    <path d="M304 332c-24.4 0-44-19.6-44-44v-64c0-24.4 19.6-44 44-44h48c24.4 0 44 19.6 44 44v64c0 24.4-19.6 44-44 44h-48zm0-32h48c6.6 0 12-5.4 12-12v-64c0-6.6-5.4-12-12-12h-48c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"/>
+    <path d="M212 340h32V172h-32v64h-48v-64h-32v168h32v-72h48v72z"/>
+  </g>
+  <text x="256" y="140" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="40" fill="#34d399" letter-spacing="2">CHATGPT</text>
+</svg>

@@ -23,7 +23,7 @@ title: ""
 <section class="home-quick-links" data-reveal>
   <iframe
     title="Articles"
-    src="{{ '/articles/' | relative_url }}"
+    src="{{ '/assets/images/chatgpt-logo.svg' | relative_url }}"
     loading="lazy"
   ></iframe>
   <iframe
