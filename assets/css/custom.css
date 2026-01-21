@@ -7,6 +7,12 @@
    Cuberto-style header (Minimal Mistakes) — tighter spacing
    ========================================================= */
 
+/* Global text color */
+body,
+body * {
+  color: #000 !important;
+}
+
 /* Less vertical space above/below the navbar */
 .masthead {
   border-bottom: none !important;
