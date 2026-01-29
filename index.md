@@ -24,7 +24,7 @@ title: ""
   <a href="{{ '/articles/' | relative_url }}" aria-label="Read our articles">
     <iframe
       title="Articles"
-      srcdoc="<!DOCTYPE html><html><head><style>html,body{margin:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#fff;}img{max-width:100%;max-height:100%;width:auto;height:auto;}</style></head><body><img src='{{ '/assets/images/ChatGPT Image Jan 20, 2026, 05_35_28 PM.png' | relative_url }}' alt='Articles cover'></body></html>"
+      src="{{ '/assets/images/ChatGPT Image Jan 20, 2026, 05_35_28 PM.png' | relative_url }}"
       loading="lazy"
       style="pointer-events: none;"
     ></iframe>
