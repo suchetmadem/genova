@@ -336,5 +336,5 @@ body * {
 
   position: relative;
   top: -6px;        /* move UP → adjust between -4px and -10px */
-  left: -18px;      /* move LEFT → adjust between -8px and -20px */
+  left: -20px;      /* move LEFT → adjust between -8px and -20px */
 }
