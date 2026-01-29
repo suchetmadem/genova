@@ -51,34 +51,36 @@ title: ""
       </html>"
     ></iframe>
   </a>
-  <iframe
-    class="home-quick-links__frame"
-    title="Contact"
-    loading="lazy"
-    srcdoc="<!doctype html>
-      <html lang='en'>
-        <head>
-          <meta charset='utf-8' />
-          <style>
-            html, body { height: 100%; margin: 0; }
-            body {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              background: #f6f3ef;
-            }
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: contain;
-            }
-          </style>
-        </head>
-        <body>
-          <img src='{{ '/assets/images/monkey.png' | relative_url }}' alt='Monkey illustration' />
-        </body>
-      </html>"
-  ></iframe>
+  <a class="home-quick-links__card" href="{{ '/about/' | relative_url }}" aria-label="Learn more about Genova">
+    <iframe
+      class="home-quick-links__frame"
+      title="About Us"
+      loading="lazy"
+      srcdoc="<!doctype html>
+        <html lang='en'>
+          <head>
+            <meta charset='utf-8' />
+            <style>
+              html, body { height: 100%; margin: 0; }
+              body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #f6f3ef;
+              }
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            </style>
+          </head>
+          <body>
+            <img src='{{ '/assets/images/monkey.png' | relative_url }}' alt='Monkey illustration' />
+          </body>
+        </html>"
+    ></iframe>
+  </a>
   <iframe
     title="About Us"
     src="{{ '/about/' | relative_url }}"
