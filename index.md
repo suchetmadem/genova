@@ -51,7 +51,7 @@ title: ""
       </html>"
     ></iframe>
   </a>
-  <a class="home-quick-links__card" href="{{ '/about/' | relative_url }}" aria-label="Learn more about Genova">
+  <a class="home-quick-links__card" href="{{ '/contact/' | relative_url }}" aria-label="Contact Genova">
     <iframe
       class="home-quick-links__frame"
       title="About Us"
