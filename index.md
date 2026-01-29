@@ -33,15 +33,13 @@ title: ""
           <style>
             html, body { height: 100%; margin: 0; }
             body {
-              display: flex;
-              align-items: center;
-              justify-content: center;
               background: #f6f3ef;
             }
             img {
               width: 100%;
               height: 100%;
-              object-fit: contain;
+              display: block;
+              object-fit: cover;
             }
           </style>
         </head>
@@ -63,15 +61,13 @@ title: ""
             <style>
               html, body { height: 100%; margin: 0; }
               body {
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 background: #f6f3ef;
               }
               img {
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                display: block;
+                object-fit: cover;
               }
             </style>
           </head>
@@ -93,15 +89,13 @@ title: ""
             <style>
               html, body { height: 100%; margin: 0; }
               body {
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 background: #f6f3ef;
               }
               img {
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                display: block;
+                object-fit: cover;
               }
             </style>
           </head>
