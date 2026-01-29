@@ -8,11 +8,12 @@ Browse our latest STEM articles below.
 
 <div class="articles-grid">
 {% for post in site.posts %}
+  {% assign cover_image = post.image | default: '/assets/images/ChatGPT Image Jan 20, 2026, 05_35_28 PM.png' %}
   <a class="article-card" href="{{ post.url | relative_url }}">
     <div class="article-frame">
       <img
         class="article-frame__image"
-        src="{{ '/assets/images/ChatGPT Image Jan 20, 2026, 05_35_28 PM.png' | relative_url | replace: ' ', '%20' }}"
+        src="{{ cover_image | relative_url | replace: ' ', '%20' }}"
         alt="ChatGPT artwork"
         loading="lazy"
       />
