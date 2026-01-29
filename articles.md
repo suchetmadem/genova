@@ -12,8 +12,8 @@ Browse our latest STEM articles below.
     <div class="article-frame">
       <img
         class="article-frame__image"
-        src="{{ '/assets/images/ChatGPT Image Jan 20, 2026, 05_35_28 PM.png' | relative_url | replace: ' ', '%20' }}"
-        alt="ChatGPT artwork"
+        src="{{ post.image | relative_url }}"
+        alt="{{ post.title }}"
         loading="lazy"
       />
       <iframe
