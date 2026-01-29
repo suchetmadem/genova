@@ -21,11 +21,14 @@ title: ""
 
 <!-- Homepage quick links -->
 <section class="home-quick-links" data-reveal>
-  <iframe
-    title="Articles"
-    src="{{ '/assets/images/chatgpt-logo.svg' | relative_url }}"
-    loading="lazy"
-  ></iframe>
+  <a href="{{ '/articles/' | relative_url }}" aria-label="Read our articles">
+    <iframe
+      title="Articles"
+      src="{{ '/assets/images/ChatGPT Image Jan 20, 2026, 05_35_28 PM.png' | relative_url }}"
+      loading="lazy"
+      style="pointer-events: none;"
+    ></iframe>
+  </a>
   <iframe
     title="Contact"
     src="{{ '/contact/' | relative_url }}"
