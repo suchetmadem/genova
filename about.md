@@ -6,7 +6,7 @@ permalink: /about/
 
 <section class="about-page">
   <div class="about-section">
-    <div class="about-copy about-copy--left">
+    <div class="about-copy">
       <h2 class="about-title">About Genova Global</h2>
       <p class="about-text">
         At Genova Global, we believe the next generation of scholars doesn't just need to read
@@ -24,7 +24,7 @@ permalink: /about/
     <div class="about-image">
       <img src="{{ '/assets/images/handshake.png.png' | relative_url }}" alt="Partners shaking hands" />
     </div>
-    <div class="about-copy about-copy--center">
+    <div class="about-copy">
       <h2 class="about-title">Our Mission</h2>
       <p class="about-text">
         To inspire and equip young minds with the critical thinking, creativity, and technical
