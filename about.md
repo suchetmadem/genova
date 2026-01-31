@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <section class="about-page">
-  <div class="about-section">
+  <div class="about-section about-section--intro">
     <div class="about-copy">
       <h2 class="about-title">About Genova Global</h2>
       <p class="about-text">
@@ -20,7 +20,7 @@ permalink: /about/
     </div>
   </div>
 
-  <div class="about-section about-section--reverse">
+  <div class="about-section about-section--reverse about-section--mission">
     <div class="about-image">
       <img src="{{ '/assets/images/handshake.png.png' | relative_url }}" alt="Partners shaking hands" />
     </div>
