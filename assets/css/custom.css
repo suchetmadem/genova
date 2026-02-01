@@ -98,6 +98,11 @@ body * {
   padding-top: 0 !important;
 }
 
+/* Wider single pages to support the About layout */
+.layout--single .page__inner-wrap {
+  max-width: 1200px;
+}
+
 /* =========================================================
    Homepage statement hero (centered text block)
    ========================================================= */
@@ -356,7 +361,7 @@ body * {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 4rem;
-  align-items: center;
+  align-items: start;
 }
 
 .about-section--reverse {
