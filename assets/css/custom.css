@@ -372,7 +372,7 @@ body * {
 .about-copy {
   max-width: 36rem;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .about-title {
