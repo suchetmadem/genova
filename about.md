@@ -16,13 +16,13 @@ permalink: /about/
       </p>
     </div>
     <div class="about-genova__media">
-      <img src="{{ '/assets/images/hiker.png' | relative_url }}" alt="Hiker celebrating at sunrise" />
+      <img src="/assets/images/hiker.png" alt="Hiker celebrating at sunrise" />
     </div>
   </div>
 
   <div class="about-genova__row about-genova__row--reverse">
     <div class="about-genova__media">
-      <img src="{{ '/assets/images/handshake.png.png' | relative_url }}" alt="Handshake partnership" />
+      <img src="/assets/images/handshake.png.png" alt="Handshake partnership" />
     </div>
     <div class="about-genova__text">
       <h2>Our Mission</h2>
