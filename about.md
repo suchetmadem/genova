@@ -2,7 +2,9 @@
 layout: single
 title: About
 permalink: /about/
+classes: wide
 ---
+
 <section class="about-genova">
   <div class="about-genova__row">
     <div class="about-genova__text">
