@@ -3,7 +3,6 @@ layout: single
 title: About
 permalink: /about/
 ---
-
 <section class="about-genova">
   <div class="about-genova__row">
     <div class="about-genova__text">
@@ -15,15 +14,17 @@ permalink: /about/
         through bridging the gap between just watching videos and real hands-on work.
       </p>
     </div>
+
     <div class="about-genova__media">
-      <img src="/assets/images/hiker.png" alt="Hiker celebrating at sunrise" />
+      <img src="{{ '/assets/images/hiker.png' | relative_url }}" alt="Hiker celebrating at sunrise" />
     </div>
   </div>
 
   <div class="about-genova__row about-genova__row--reverse">
     <div class="about-genova__media">
-      <img src="/assets/images/handshake.png.png" alt="Handshake partnership" />
+      <img src="{{ '/assets/images/handshake.png' | relative_url }}" alt="Handshake partnership" />
     </div>
+
     <div class="about-genova__text">
       <h2>Our Mission</h2>
       <p>
