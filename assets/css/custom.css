@@ -98,10 +98,19 @@ body * {
   padding-top: 0 !important;
 }
 
+/* Wider single pages to support the About layout */
+.layout--single .page__inner-wrap {
+  max-width: 1200px !important;
+}
+
+.layout--single .page__content {
+  max-width: 100%;
+}
+
 /* =========================================================
    Homepage statement hero (centered text block)
    ========================================================= */
-.hero--statement {
+.layout--splash .hero--statement {
   min-height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
@@ -112,7 +121,7 @@ body * {
 }
 
 /* 🔥 CHANGE BIG TEXT SIZE HERE */
-.hero--statement h1 {
+.layout--splash .hero--statement h1 {
   font-size: clamp(3.5rem, 8vw, 6.5rem); /* <— edit these numbers */
   font-weight: 700;
   line-height: 1.05;
@@ -121,7 +130,7 @@ body * {
   margin-bottom: 1.75rem;
 }
 
-.hero--statement p {
+.layout--splash .hero--statement p {
   font-size: 1.15rem;
   line-height: 1.6;
   color: #333;
@@ -356,7 +365,7 @@ body * {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 4rem;
-  align-items: center;
+  align-items: start;
 }
 
 .about-section--reverse {
