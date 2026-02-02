@@ -3,7 +3,10 @@ layout: single
 title: About
 permalink: /about/
 classes: wide
+author_profile: false
+sidebar: false
 ---
+
 
 <section class="about-genova">
   <div class="about-genova__row">
