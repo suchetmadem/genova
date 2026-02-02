@@ -295,8 +295,8 @@ body * {
 .about-genova__row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
+  gap: 3.5rem;
+  align-items: start;
 }
 
 /* Text like your mock */
@@ -306,22 +306,44 @@ body * {
   margin: 0 auto;
 }
 
-/* Images hug the outer edges */
+/* Typography */
+.about-genova__text h1,
+.about-genova__text h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #111;
+}
+
+.about-genova__text h1 {
+  display: inline-block;
+  padding: 0.6rem 2.75rem;
+  border: 1px solid #9ca3af;
+  margin-bottom: 1.5rem;
+}
+
+.about-genova__text h2 {
+  margin-bottom: 1rem;
+}
+
+.about-genova__text p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+/* Images aligned to content column */
 .about-genova__media {
   display: flex;
   width: 100%;
-  justify-content: flex-end; /* row 1 image hugs right edge */
-}
-
-.about-genova__row--reverse .about-genova__media {
-  justify-content: flex-start; /* row 2 image hugs left edge */
+  justify-content: center;
 }
 
 .about-genova__media img {
-  width: min(520px, 100%);
+  width: min(620px, 100%);
   height: auto;
   display: block;
-  border-radius: 2.25rem;
+  border-radius: 2.1rem;
   box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
 }
 
