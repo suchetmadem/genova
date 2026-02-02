@@ -100,11 +100,7 @@ body * {
 
 /* Wider single pages to support the About layout */
 .layout--single .page__inner-wrap {
-  max-width: 1200px !important;
-}
-
-.layout--single .page__content {
-  max-width: 100%;
+  max-width: 1200px;
 }
 
 /* =========================================================
