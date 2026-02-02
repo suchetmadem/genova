@@ -297,6 +297,9 @@ body * {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+
+  max-width: 1100px;   /* 👈 this is the magic */
+  margin: 0 auto;      /* 👈 centers the whole row */
 }
 
 /* Text like your mock */
