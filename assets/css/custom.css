@@ -363,3 +363,18 @@ justify-content: center;
 .layout--single.wide .page__content .about-genova__media {
   outline: 4px solid red !important;
 }
+
+/* Force-disable MM sidebar on About page */
+.layout--single.wide .sidebar,
+.layout--single.wide .author__avatar,
+.layout--single.wide .author__content,
+.layout--single.wide .author__urls-wrapper {
+  display: none !important;
+}
+
+/* Make content span full width when sidebar is gone */
+.layout--single.wide .page__content {
+  width: 100% !important;
+  margin: 0 auto !important;
+  float: none !important;
+}
