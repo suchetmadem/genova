@@ -314,16 +314,12 @@ body * {
   margin: 0 auto;
 }
 
-/* Images hug the outer edges (within the centered row) */
 .about-genova__media {
   display: flex;
   width: 100%;
-  justify-content: flex-end;  /* row 1 image to the right side */
+  justify-content: center;   /* ✅ centers image in its column */
 }
 
-.about-genova__row--reverse .about-genova__media {
-  justify-content: flex-start; /* row 2 image to the left side */
-}
 
 .about-genova__media img {
   width: min(620px, 100%);    /* slightly larger to match your mock */
