@@ -282,25 +282,29 @@ body * {
 }
 
 /* =========================================================
-   About page: final (single source of truth)
+   About page: centered like mock
    ========================================================= */
+
 .about-genova {
   max-width: 1400px;
   margin: 0 auto;
   padding: 3rem 1.25rem 5rem;
-  display: grid;
-  gap: 5rem;
+
+  display: flex;              /* <-- key change */
+  flex-direction: column;
+  gap: 4rem;                  /* reduce vertical whitespace */
+  align-items: center;        /* centers the rows */
 }
 
+/* Each row becomes a centered “unit” */
 .about-genova__row {
+  width: 100%;
+  max-width: 1100px;          /* <-- controls how centered/tight it feels */
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  justify-items: center;
-
-  max-width: 1100px;   /* 👈 this is the magic */
-  margin: 0 auto;      /* 👈 centers the whole row */
 }
 
 /* Text like your mock */
@@ -310,25 +314,26 @@ body * {
   margin: 0 auto;
 }
 
-/* Images hug the outer edges */
+/* Images hug the outer edges (within the centered row) */
 .about-genova__media {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;  /* row 1 image to the right side */
 }
 
 .about-genova__row--reverse .about-genova__media {
-  justify-content: center;
+  justify-content: flex-start; /* row 2 image to the left side */
 }
 
 .about-genova__media img {
-  width: min(520px, 100%);
+  width: min(620px, 100%);    /* slightly larger to match your mock */
   height: auto;
   display: block;
   border-radius: 2.25rem;
   box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
 }
 
+/* Mobile */
 @media (max-width: 900px) {
   .about-genova__row {
     grid-template-columns: 1fr;
