@@ -402,8 +402,63 @@ body * {
 
 
 
-/* DEBUG: if you don't see red outlines, this CSS isn't applying */
-.about-genova { outline: 6px solid red !important; }
-.about-genova__row { outline: 4px solid blue !important; }
-.about-genova__text { outline: 4px solid lime !important; text-align: left !important; margin: 0 !important; }
+/* ===== About page: force edge-aligned images + balanced columns ===== */
 
+.about-genova {
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding: 3rem 1.25rem 5rem !important;
+  display: grid !important;
+  gap: 5rem !important;
+}
+
+.about-genova__row {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4rem !important;
+  align-items: center !important;
+}
+
+/* Keep your centered text look (like your mock), but don't "float" it */
+.about-genova__text {
+  text-align: center !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+}
+
+/* 🔥 The real fix: align the IMAGE using the wrapper */
+.about-genova__media {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: flex-end !important; /* default: image hugs right edge */
+}
+
+/* Reverse row: image hugs left edge */
+.about-genova__row--reverse .about-genova__media {
+  justify-content: flex-start !important;
+}
+
+.about-genova__media img {
+  width: min(520px, 100%) !important;
+  height: auto !important;
+  display: block !important;
+  border-radius: 2.25rem !important;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18) !important;
+}
+
+/* Mobile stacks */
+@media (max-width: 900px) {
+  .about-genova__row {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .about-genova__media,
+  .about-genova__row--reverse .about-genova__media {
+    justify-content: center !important;
+  }
+
+  .about-genova__text {
+    margin: 0 auto !important;
+  }
+}
