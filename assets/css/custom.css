@@ -100,8 +100,9 @@ body * {
 
 /* Wider single pages to support the About layout */
 .layout--single .page__inner-wrap {
-  max-width: 1200px;
+  max-width: 1200px !important;
 }
+
 
 /* =========================================================
    Homepage statement hero (centered text block)
