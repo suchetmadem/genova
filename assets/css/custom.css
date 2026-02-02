@@ -341,3 +341,25 @@ body * {
     justify-content: center;
   }
 }
+
+
+/* ===== FINAL OVERRIDE: center About images (wins against anything) ===== */
+.layout--single.wide .page__content .about-genova__row {
+  max-width: 1100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.layout--single.wide .page__content .about-genova__media {
+  display: flex !important;
+  justify-content: center !important;  /* <- force center */
+  width: 100% !important;
+}
+
+.layout--single.wide .page__content .about-genova__row--reverse .about-genova__media {
+  justify-content: center !important;  /* <- also force center on reverse row */
+}
+
+.layout--single.wide .page__content .about-genova__media {
+  outline: 4px solid red !important;
+}
