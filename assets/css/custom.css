@@ -418,3 +418,10 @@ body * {
     justify-self: center;
   }
 }
+
+
+/* DEBUG: if you don't see red outlines, this CSS isn't applying */
+.about-genova { outline: 6px solid red !important; }
+.about-genova__row { outline: 4px solid blue !important; }
+.about-genova__text { outline: 4px solid lime !important; text-align: left !important; margin: 0 !important; }
+
