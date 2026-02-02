@@ -345,79 +345,61 @@ body * {
   left: -20px;      /* move LEFT → adjust between -8px and -20px */
 }
 
-/* =========================================================
-   About page layout (fixed: true 2-col like your mock)
-   ========================================================= */
-.about-genova {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.5rem 1.25rem 4rem;
-  display: grid;
-  gap: 5rem;
+/* About page — force layout */
+.layout--single .page__content .about-genova {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 2.5rem 1.25rem 4rem !important;
+  display: grid !important;
+  gap: 5rem !important;
 }
 
-.about-genova__row {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr; /* text a bit wider than image */
-  gap: 4rem;
-  align-items: center;
+.layout--single .page__content .about-genova__row {
+  display: grid !important;
+  grid-template-columns: 1.05fr 0.95fr !important;
+  gap: 4rem !important;
+  align-items: center !important;
 }
 
-/* IMPORTANT: stop centering the text block inside its column */
-.about-genova__text {
-  text-align: left;     /* was center */
-  max-width: 560px;     /* optional: keeps lines readable */
-  margin: 0;            /* was 0 auto */
-  font-family: "Raleway", sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.7;
+.layout--single .page__content .about-genova__text {
+  text-align: left !important;
+  max-width: 560px !important;
+  margin: 0 !important;
 }
 
-.about-genova__text h1,
-.about-genova__text h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  margin: 0 0 1rem;
-  color: #000;
+.layout--single .page__content .about-genova__media {
+  justify-self: end !important;
 }
 
-.about-genova__text h1 { font-size: 2.25rem; }
-.about-genova__text h2 { font-size: 2rem; }
-
-/* Make the images align to the outside edge of the row */
-.about-genova__media {
-  justify-self: end;
+.layout--single .page__content .about-genova__row--reverse .about-genova__media {
+  justify-self: start !important;
 }
 
-.about-genova__row--reverse .about-genova__media {
-  justify-self: start;
+.layout--single .page__content .about-genova__media img {
+  width: 100% !important;
+  max-width: 520px !important;
+  display: block !important;
+  border-radius: 2.25rem !important;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18) !important;
 }
 
-.about-genova__media img {
-  width: 100%;
-  max-width: 520px; /* keeps it from getting too huge */
-  border-radius: 2.25rem;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
-  display: block;
-}
-
-/* Mobile */
 @media (max-width: 900px) {
-  .about-genova__row {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .layout--single .page__content .about-genova__row {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
   }
 
-  .about-genova__text {
-    text-align: center;
-    margin: 0 auto;
+  .layout--single .page__content .about-genova__text {
+    text-align: center !important;
+    margin: 0 auto !important;
   }
 
-  .about-genova__media,
-  .about-genova__row--reverse .about-genova__media {
-    justify-self: center;
+  .layout--single .page__content .about-genova__media,
+  .layout--single .page__content .about-genova__row--reverse .about-genova__media {
+    justify-self: center !important;
   }
 }
+
 
 
 /* DEBUG: if you don't see red outlines, this CSS isn't applying */
