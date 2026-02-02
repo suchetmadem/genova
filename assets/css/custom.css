@@ -113,8 +113,14 @@ body * {
   padding-top: 0 !important;
 }
 
-.layout--single .page__inner-wrap {
+/* Default single pages can stay comfortable */
+.layout--single:not(.wide) .page__inner-wrap {
   max-width: 1200px !important;
+}
+
+/* But if the page uses classes: wide, let it expand */
+.layout--single.wide .page__inner-wrap {
+  max-width: 1400px !important;
 }
 
 /* =========================================================
