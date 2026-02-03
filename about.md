@@ -7,10 +7,9 @@ author_profile: false
 sidebar: false
 ---
 
-
-<section class="about-genova">
-  <div class="about-genova__row">
-    <div class="about-genova__text">
+<section class="about-feature">
+  <div class="about-feature__row">
+    <div class="about-feature__text">
       <h1>About Genova Global</h1>
       <p>
         At Genova Global, we believe the next generation of scholars doesn&apos;t just need
@@ -19,18 +18,16 @@ sidebar: false
         through bridging the gap between just watching videos and real hands-on work.
       </p>
     </div>
-
-    <div class="about-genova__media">
+    <div class="about-feature__media">
       <img src="{{ '/assets/images/hiker.png' | relative_url }}" alt="Hiker celebrating at sunrise" />
     </div>
   </div>
 
-  <div class="about-genova__row about-genova__row--reverse">
-    <div class="about-genova__media">
+  <div class="about-feature__row about-feature__row--reverse">
+    <div class="about-feature__media">
       <img src="{{ '/assets/images/handshake.png' | relative_url }}" alt="Handshake partnership" />
     </div>
-
-    <div class="about-genova__text">
+    <div class="about-feature__text">
       <h2>Our Mission</h2>
       <p>
         To inspire and equip young minds with the critical thinking, creativity, and
