@@ -285,13 +285,11 @@ border-radius: 1.75rem;
    ABOUT — single final block (do not duplicate anywhere else)
    ========================================================= */
 
-/* Hard-center the whole About section against the viewport */
+/* Align the About section to the left edge */
 .layout--single.wide .page__content .about-genova {
   position: relative !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-
-  width: min(1240px, calc(100vw - 3rem)) !important;
+  width: 100% !important;
+  max-width: 1240px !important;
   margin: 0 !important;
   padding: 3.5rem 0 5rem !important;
 }
@@ -305,7 +303,7 @@ border-radius: 1.75rem;
 
   width: 100% !important;
   max-width: 1240px !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
 }
 
 /* Reverse row keeps balance */
@@ -313,12 +311,36 @@ border-radius: 1.75rem;
   grid-template-columns: 1.05fr 0.95fr !important;
 }
 
-/* Center the text block */
+/* Default text block styling */
 .layout--single.wide .page__content .about-genova__text {
   text-align: center !important;
   max-width: 520px !important;
   margin: 0 auto !important;
   line-height: 1.75 !important;
+}
+
+/* Left-align the intro text block in the first row */
+.layout--single.wide
+  .page__content
+  .about-genova__row:not(.about-genova__row--reverse)
+  .about-genova__text {
+  text-align: left !important;
+  margin: 0 !important;
+  justify-self: start !important;
+  align-self: start !important;
+}
+
+.layout--single.wide .page__content .about-genova__text h1,
+.layout--single.wide .page__content .about-genova__text h2 {
+  margin-top: 0 !important;
+}
+
+.layout--single.wide .page__content .about-genova__row--reverse .about-genova__text {
+  text-align: center !important;
+  margin: 0 auto !important;
+  max-width: 520px !important;
+  justify-self: center !important;
+  align-self: center !important;
 }
 
 /* Center images within their column */
@@ -340,8 +362,20 @@ border-radius: 1.75rem;
 /* Mobile stack */
 @media (max-width: 900px) {
   .layout--single.wide .page__content .about-genova {
-    width: min(720px, calc(100vw - 2rem)) !important;
+    width: 100% !important;
+    max-width: 720px !important;
+    margin: 0 !important;
     padding: 2.5rem 0 3.5rem !important;
+  }
+
+  .layout--single.wide
+    .page__content
+    .about-genova__row:not(.about-genova__row--reverse)
+    .about-genova__text {
+    text-align: center !important;
+    margin: 0 auto !important;
+    justify-self: center !important;
+    align-self: center !important;
   }
 
   .layout--single.wide .page__content .about-genova__row {
