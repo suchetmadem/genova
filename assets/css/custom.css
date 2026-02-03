@@ -421,3 +421,15 @@ justify-content: center;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+/* ===== ABOUT: force center in viewport (ignores theme offsets) ===== */
+.layout--single.wide .page__content .about-genova {
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+  /* keep it responsive + not full-bleed */
+  width: min(1400px, calc(100vw - 2.5rem)) !important;
+
+  margin: 0 !important; /* don't rely on margin auto anymore */
+}
