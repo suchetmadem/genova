@@ -121,6 +121,13 @@ max-width: 1200px !important;
 /* But if the page uses classes: wide, let it expand */
 .layout--single.wide .page__inner-wrap {
 max-width: 1400px !important;
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+
+.layout--single.wide .page__content {
+padding-left: 0 !important;
+padding-right: 0 !important;
 }
 
 /* =========================================================
@@ -286,8 +293,8 @@ border-radius: 1.75rem;
    ========================================================= */
 
 .layout--single.wide .page__content .about {
-  width: min(800px, calc(100vw - 3rem));
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 3rem 0 4rem;
   line-height: 1.7;
 }
@@ -310,8 +317,8 @@ border-radius: 1.75rem;
 }
 
 .layout--single.wide .page__content .about-feature {
-  width: min(1200px, calc(100vw - 3rem));
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 3rem 0 4rem;
 }
 
@@ -328,9 +335,9 @@ border-radius: 1.75rem;
 }
 
 .layout--single.wide .page__content .about-feature__text {
-  text-align: center;
-  max-width: 560px;
-  margin: -50 auto;
+  text-align: left;
+  max-width: 100%;
+  margin: 0;
   line-height: 1.75;
 }
 
@@ -341,7 +348,7 @@ border-radius: 1.75rem;
 
 .layout--single.wide .page__content .about-feature__media {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .layout--single.wide .page__content .about-feature__media img {
@@ -355,7 +362,7 @@ border-radius: 1.75rem;
 
 @media (max-width: 900px) {
   .layout--single.wide .page__content .about-feature {
-    width: min(720px, calc(100vw - 2rem));
+    width: 100%;
     padding: 2.5rem 0 3rem;
   }
 
