@@ -342,6 +342,19 @@ border-radius: 1.75rem;
   align-self: center !important;
 }
 
+.layout--single.wide .page__content .about-genova__text h1,
+.layout--single.wide .page__content .about-genova__text h2 {
+  margin-top: 0 !important;
+}
+
+.layout--single.wide .page__content .about-genova__row--reverse .about-genova__text {
+  text-align: center !important;
+  margin: 0 auto !important;
+  max-width: 520px !important;
+  justify-self: center !important;
+  align-self: center !important;
+}
+
 /* Center images within their column */
 .layout--single.wide .page__content .about-genova__media {
   display: flex !important;
