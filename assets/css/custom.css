@@ -282,140 +282,65 @@ border-radius: 1.75rem;
 }
 
 /* =========================================================
-   ABOUT — single final block (do not duplicate anywhere else)
+   ABOUT — rebuilt layout
    ========================================================= */
 
-/* Align the About section to the left edge */
-.layout--single.wide .page__content .about-genova {
-  position: relative !important;
-  width: min(1240px, calc(100vw - 3rem)) !important;
-  margin: 0 auto 0 0 !important;
-  padding: 3.5rem 0 5rem !important;
+.layout--single.wide .page__content .about-feature {
+  width: min(1200px, calc(100vw - 3rem));
+  margin: 0 auto 0 0;
+  padding: 3rem 0 4rem;
 }
 
-/* Two-column layout with “reference” proportions */
-.layout--single.wide .page__content .about-genova__row {
-  display: grid !important;
-  grid-template-columns: 0.95fr 1.05fr !important;
-  gap: 4.25rem !important;
-  align-items: center !important;
-
-  width: 100% !important;
-  max-width: 1240px !important;
-  margin: 0 !important;
+.layout--single.wide .page__content .about-feature__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 3.5rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
 }
 
-/* Reverse row keeps balance */
-.layout--single.wide .page__content .about-genova__row.about-genova__row--reverse {
-  grid-template-columns: 1.05fr 0.95fr !important;
+.layout--single.wide .page__content .about-feature__row--reverse {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
 }
 
-/* Default text block styling */
-.layout--single.wide .page__content .about-genova__text {
-  text-align: left !important;
-  max-width: 560px !important;
-  margin: 0 !important;
-  line-height: 1.75 !important;
+.layout--single.wide .page__content .about-feature__text {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.75;
 }
 
-.layout--single.wide .page__content .about-genova__text h1,
-.layout--single.wide .page__content .about-genova__text h2 {
-  margin-top: 0 !important;
+.layout--single.wide .page__content .about-feature__text h1,
+.layout--single.wide .page__content .about-feature__text h2 {
+  margin-top: 0;
 }
 
-.layout--single.wide .page__content .about-genova__row--reverse .about-genova__text {
-  text-align: center !important;
-  margin: 0 auto !important;
-  max-width: 520px !important;
+.layout--single.wide .page__content .about-feature__media {
+  display: flex;
+  justify-content: center;
 }
 
-.layout--single.wide .page__content .about-genova__text h1,
-.layout--single.wide .page__content .about-genova__text h2 {
-  margin-top: 0 !important;
+.layout--single.wide .page__content .about-feature__media img {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  border-radius: 2.25rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+  display: block;
 }
 
-.layout--single.wide .page__content .about-genova__row--reverse .about-genova__text {
-  text-align: center !important;
-  margin: 0 auto !important;
-  max-width: 520px !important;
-  justify-self: center !important;
-  align-self: center !important;
-}
-
-.layout--single.wide .page__content .about-genova__text h1,
-.layout--single.wide .page__content .about-genova__text h2 {
-  margin-top: 0 !important;
-}
-
-.layout--single.wide .page__content .about-genova__row--reverse .about-genova__text {
-  text-align: center !important;
-  margin: 0 auto !important;
-  max-width: 520px !important;
-  justify-self: center !important;
-  align-self: center !important;
-}
-
-/* Left-align the intro text block in the first row */
-.layout--single.wide
-  .page__content
-  .about-genova__row:not(.about-genova__row--reverse)
-  .about-genova__text {
-  text-align: left !important;
-  margin: 0 !important;
-  justify-self: start !important;
-  align-self: start !important;
-}
-
-.layout--single.wide .page__content .about-genova__text h1,
-.layout--single.wide .page__content .about-genova__text h2 {
-  margin-top: 0 !important;
-}
-
-.layout--single.wide .page__content .about-genova__row--reverse .about-genova__text {
-  text-align: center !important;
-  margin: 0 auto !important;
-  max-width: 520px !important;
-  justify-self: center !important;
-  align-self: center !important;
-}
-
-/* Center images within their column */
-.layout--single.wide .page__content .about-genova__media {
-  display: flex !important;
-  justify-content: center !important;
-  width: 100% !important;
-}
-
-.layout--single.wide .page__content .about-genova__media img {
-  width: 100% !important;
-  max-width: 680px !important;
-  height: auto !important;
-  display: block !important;
-  border-radius: 2.25rem !important;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18) !important;
-}
-
-/* Mobile stack */
 @media (max-width: 900px) {
-  .layout--single.wide .page__content .about-genova {
-    width: min(720px, calc(100vw - 2rem)) !important;
-    margin: 0 auto !important;
-    padding: 2.5rem 0 3.5rem !important;
+  .layout--single.wide .page__content .about-feature {
+    width: min(720px, calc(100vw - 2rem));
+    padding: 2.5rem 0 3rem;
   }
 
-  .layout--single.wide
-    .page__content
-    .about-genova__row:not(.about-genova__row--reverse)
-    .about-genova__text {
-    text-align: center !important;
-    margin: 0 auto !important;
-    justify-self: center !important;
-    align-self: center !important;
+  .layout--single.wide .page__content .about-feature__row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
-  .layout--single.wide .page__content .about-genova__row {
-    grid-template-columns: 1fr !important;
-    gap: 2rem !important;
-    align-items: center !important;
+  .layout--single.wide .page__content .about-feature__row--reverse {
+    grid-template-columns: 1fr;
   }
 }
