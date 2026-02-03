@@ -433,3 +433,74 @@ justify-content: center;
 
   margin: 0 !important; /* don't rely on margin auto anymore */
 }
+
+
+/* =========================================================
+   ABOUT — final tuning block (edit only the variables)
+   ========================================================= */
+:root{
+  --about-wrap: 1240px;     /* overall about section width */
+  --about-gap: 4.25rem;     /* space between text and image */
+  --about-text: 520px;      /* text column max width */
+  --about-img: 640px;       /* image max width */
+  --about-nudge: 0px;       /* tiny left/right nudge if needed */
+}
+
+/* Keep the viewport-centering that worked */
+.layout--single.wide .page__content .about-genova{
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(calc(-50% + var(--about-nudge))) !important;
+
+  width: min(var(--about-wrap), calc(100vw - 3rem)) !important;
+  margin: 0 !important;
+  padding: 3.5rem 0 5rem !important;
+}
+
+/* Match the reference proportions */
+.layout--single.wide .page__content .about-genova__row{
+  max-width: var(--about-wrap) !important;
+  margin: 0 auto !important;
+
+  display: grid !important;
+  grid-template-columns: 0.95fr 1.05fr !important; /* text slightly narrower */
+  gap: var(--about-gap) !important;
+  align-items: start !important; /* closer to your screenshot */
+}
+
+/* Reverse row keeps same visual balance */
+.layout--single.wide .page__content .about-genova__row.about-genova__row--reverse{
+  grid-template-columns: 1.05fr 0.95fr !important;
+}
+
+/* Text */
+.layout--single.wide .page__content .about-genova__text{
+  text-align: center !important;
+  max-width: var(--about-text) !important;
+  margin: 0 auto !important;
+  line-height: 1.75 !important;
+}
+
+/* Media */
+.layout--single.wide .page__content .about-genova__media{
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.layout--single.wide .page__content .about-genova__media img{
+  width: 100% !important;
+  max-width: var(--about-img) !important;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .layout--single.wide .page__content .about-genova{
+    width: min(700px, calc(100vw - 2rem)) !important;
+    padding: 2.5rem 0 3.5rem !important;
+  }
+  .layout--single.wide .page__content .about-genova__row{
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    align-items: center !important;
+  }
+}
