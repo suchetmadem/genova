@@ -382,3 +382,29 @@ justify-content: center;
 
 /* DEBUG PROOF */
 .about-genova { outline: 8px solid hotpink !important; }
+
+
+
+/* Force About page content column to center and span full width */
+.layout--single.wide .page__inner-wrap {
+  max-width: 1400px !important;
+}
+
+.layout--single.wide .page__content {
+  float: none !important;
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* If the theme is reserving space for a sidebar, remove that reservation */
+.layout--single.wide .sidebar {
+  display: none !important;
+}
+
+.layout--single.wide .page__content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
