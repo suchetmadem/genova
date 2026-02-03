@@ -282,223 +282,69 @@ border-radius: 1.75rem;
 }
 
 /* =========================================================
-  About page: centered like mock
-  ========================================================= */
+   ABOUT — single final block (do not duplicate anywhere else)
+   ========================================================= */
 
-.about-genova {
-max-width: 1400px;
-margin: 0 auto;
-padding: 3rem 1.25rem 5rem;
-
-display: flex;              /* <-- key change */
-flex-direction: column;
-gap: 4rem;                  /* reduce vertical whitespace */
-align-items: center;        /* centers the rows */
-}
-
-/* Each row becomes a centered “unit” */
-.about-genova__row {
-width: 100%;
-max-width: 1100px;          /* <-- controls how centered/tight it feels */
-
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 4rem;
-align-items: center;
-}
-
-/* Text like your mock */
-.about-genova__text {
-text-align: center;
-max-width: 560px;
-margin: 0 auto;
-}
-
-.about-genova__media {
-display: flex;
-width: 100%;
-justify-content: center;   /* ✅ centers image in its column */
-}
-
-
-.about-genova__media img {
-width: min(620px, 100%);    /* slightly larger to match your mock */
-height: auto;
-display: block;
-border-radius: 2.25rem;
-box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
-}
-
-/* Mobile */
-@media (max-width: 900px) {
-.about-genova__row {
-grid-template-columns: 1fr;
-gap: 2rem;
-}
-
-.about-genova__media,
-.about-genova__row--reverse .about-genova__media {
-justify-content: center;
-}
-}
-
-
-/* ===== FINAL OVERRIDE: center About images (wins against anything) ===== */
-.layout--single.wide .page__content .about-genova__row {
-  max-width: 1100px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.layout--single.wide .page__content .about-genova__media {
-  display: flex !important;
-  justify-content: center !important;  /* <- force center */
-  width: 100% !important;
-}
-
-.layout--single.wide .page__content .about-genova__row--reverse .about-genova__media {
-  justify-content: center !important;  /* <- also force center on reverse row */
-}
-
-.layout--single.wide .page__content .about-genova__media {
-  outline: 4px solid red !important;
-}
-
-/* Force-disable MM sidebar on About page */
-.layout--single.wide .sidebar,
-.layout--single.wide .author__avatar,
-.layout--single.wide .author__content,
-.layout--single.wide .author__urls-wrapper {
-  display: none !important;
-}
-
-/* Make content span full width when sidebar is gone */
-.layout--single.wide .page__content {
-  width: 100% !important;
-  margin: 0 auto !important;
-  float: none !important;
-}
-
-
-/* DEBUG PROOF */
-.about-genova { outline: 8px solid hotpink !important; }
-
-
-
-/* ===== ABOUT PAGE: FORCE TRUE CENTERED CONTENT COLUMN ===== */
-
-/* Make the page content not reserve space for sidebar */
-.layout--single.wide .page__content {
-  float: none !important;
-  width: 100% !important;
-  max-width: 1400px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* If MM is using a grid/column wrapper, ensure it centers too */
-.layout--single.wide .page__inner-wrap {
-  float: none !important;
-  width: 100% !important;
-  max-width: 1400px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Hide any sidebar/author column AND remove its spacing */
-.layout--single.wide .sidebar {
-  display: none !important;
-}
-
-.layout--single.wide .page__content,
-.layout--single.wide .page__inner-wrap {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-/* Optional: if the theme adds a left gutter for sidebar, kill it */
-.layout--single.wide .page {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-/* ===== ABOUT: force center in viewport (ignores theme offsets) ===== */
+/* Hard-center the whole About section against the viewport */
 .layout--single.wide .page__content .about-genova {
   position: relative !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
 
-  /* keep it responsive + not full-bleed */
-  width: min(1400px, calc(100vw - 2.5rem)) !important;
-
-  margin: 0 !important; /* don't rely on margin auto anymore */
-}
-
-
-/* =========================================================
-   ABOUT — final tuning block (edit only the variables)
-   ========================================================= */
-:root{
-  --about-wrap: 1240px;     /* overall about section width */
-  --about-gap: 4.25rem;     /* space between text and image */
-  --about-text: 520px;      /* text column max width */
-  --about-img: 640px;       /* image max width */
-  --about-nudge: 0px;       /* tiny left/right nudge if needed */
-}
-
-/* Keep the viewport-centering that worked */
-.layout--single.wide .page__content .about-genova{
-  position: relative !important;
-  left: 50% !important;
-  transform: translateX(calc(-50% + var(--about-nudge))) !important;
-
-  width: min(var(--about-wrap), calc(100vw - 3rem)) !important;
+  width: min(1240px, calc(100vw - 3rem)) !important;
   margin: 0 !important;
   padding: 3.5rem 0 5rem !important;
 }
 
-/* Match the reference proportions */
-.layout--single.wide .page__content .about-genova__row{
-  max-width: var(--about-wrap) !important;
-  margin: 0 auto !important;
-
+/* Two-column layout with “reference” proportions */
+.layout--single.wide .page__content .about-genova__row {
   display: grid !important;
-  grid-template-columns: 0.95fr 1.05fr !important; /* text slightly narrower */
-  gap: var(--about-gap) !important;
-  align-items: start !important; /* closer to your screenshot */
+  grid-template-columns: 0.95fr 1.05fr !important;
+  gap: 4.25rem !important;
+  align-items: start !important;
+
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto !important;
 }
 
-/* Reverse row keeps same visual balance */
-.layout--single.wide .page__content .about-genova__row.about-genova__row--reverse{
+/* Reverse row keeps balance */
+.layout--single.wide .page__content .about-genova__row.about-genova__row--reverse {
   grid-template-columns: 1.05fr 0.95fr !important;
 }
 
-/* Text */
-.layout--single.wide .page__content .about-genova__text{
+/* Center the text block */
+.layout--single.wide .page__content .about-genova__text {
   text-align: center !important;
-  max-width: var(--about-text) !important;
+  max-width: 520px !important;
   margin: 0 auto !important;
   line-height: 1.75 !important;
 }
 
-/* Media */
-.layout--single.wide .page__content .about-genova__media{
+/* Center images within their column */
+.layout--single.wide .page__content .about-genova__media {
   display: flex !important;
   justify-content: center !important;
-}
-
-.layout--single.wide .page__content .about-genova__media img{
   width: 100% !important;
-  max-width: var(--about-img) !important;
 }
 
-/* Mobile */
-@media (max-width: 900px){
-  .layout--single.wide .page__content .about-genova{
-    width: min(700px, calc(100vw - 2rem)) !important;
+.layout--single.wide .page__content .about-genova__media img {
+  width: 100% !important;
+  max-width: 680px !important;
+  height: auto !important;
+  display: block !important;
+  border-radius: 2.25rem !important;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18) !important;
+}
+
+/* Mobile stack */
+@media (max-width: 900px) {
+  .layout--single.wide .page__content .about-genova {
+    width: min(720px, calc(100vw - 2rem)) !important;
     padding: 2.5rem 0 3.5rem !important;
   }
-  .layout--single.wide .page__content .about-genova__row{
+
+  .layout--single.wide .page__content .about-genova__row {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
     align-items: center !important;
