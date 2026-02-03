@@ -121,6 +121,13 @@ max-width: 1200px !important;
 /* But if the page uses classes: wide, let it expand */
 .layout--single.wide .page__inner-wrap {
 max-width: 1400px !important;
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+
+.layout--single.wide .page__content {
+padding-left: 0 !important;
+padding-right: 0 !important;
 }
 
 /* =========================================================
