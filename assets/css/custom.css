@@ -378,3 +378,7 @@ justify-content: center;
   margin: 0 auto !important;
   float: none !important;
 }
+
+
+/* DEBUG PROOF */
+.about-genova { outline: 8px solid hotpink !important; }
