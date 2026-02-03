@@ -301,7 +301,7 @@ border-radius: 1.75rem;
   display: grid !important;
   grid-template-columns: 0.95fr 1.05fr !important;
   gap: 4.25rem !important;
-  align-items: start !important;
+  align-items: center !important;
 
   width: 100% !important;
   max-width: 1240px !important;
@@ -318,8 +318,6 @@ border-radius: 1.75rem;
   text-align: left !important;
   max-width: 560px !important;
   margin: 0 !important;
-  justify-self: start !important;
-  align-self: start !important;
   line-height: 1.75 !important;
 }
 
@@ -332,8 +330,6 @@ border-radius: 1.75rem;
   text-align: center !important;
   margin: 0 auto !important;
   max-width: 520px !important;
-  justify-self: center !important;
-  align-self: center !important;
 }
 
 /* Center images within their column */
