@@ -285,6 +285,30 @@ border-radius: 1.75rem;
    ABOUT — rebuilt layout
    ========================================================= */
 
+.layout--single.wide .page__content .about {
+  width: min(800px, calc(100vw - 3rem));
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+  line-height: 1.7;
+}
+
+.layout--single.wide .page__content .about h1,
+.layout--single.wide .page__content .about h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.layout--single.wide .page__content .about p,
+.layout--single.wide .page__content .about li {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.layout--single.wide .page__content .about ul {
+  padding-left: 1.5rem;
+}
+
 .layout--single.wide .page__content .about-feature {
   width: min(1200px, calc(100vw - 3rem));
   margin: 0 auto;
