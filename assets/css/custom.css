@@ -87,9 +87,9 @@ left: -20px;
 
 .masthead #site-nav.greedy-nav .site-logo img {
 display: block;
-height: 44px;
-width: auto;
-max-width: none;
+width: 150px;
+max-height: 44px;
+height: auto;
 }
 
 /* =========================================================
