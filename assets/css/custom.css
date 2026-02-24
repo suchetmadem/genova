@@ -17,7 +17,7 @@ color: #000 !important;
 /* Less vertical space above/below the navbar */
 .masthead {
 border-bottom: none !important;
-padding: 1.1rem 0 !important;
+padding: 1.65rem 0 !important;
 }
 
 /* Bring logo + nav closer to screen edges */
@@ -73,20 +73,24 @@ font-weight: 500 !important;
 opacity: 0.55 !important;
 }
 
-/* Force logo text to pure black */
-.masthead #site-nav.greedy-nav .site-title,
-.masthead #site-nav.greedy-nav .site-title a {
-color: #000 !important;
+/* Render brand as image logo instead of text */
+.masthead #site-nav.greedy-nav .site-title {
+display: none !important;
 }
 
-/* Logo styling + nudge */
-.masthead #site-nav.greedy-nav .site-title a {
-font-size: 1.5rem !important;
-font-weight: 700 !important;
-letter-spacing: -0.03em !important;
+.masthead #site-nav.greedy-nav .site-logo {
+margin-right: auto !important;
 position: relative;
-top: -6px;
+top: 0;
 left: -20px;
+}
+
+.masthead #site-nav.greedy-nav .site-logo img {
+display: block;
+height: 52px;
+width: auto;
+max-width: none;
+max-height: none;
 }
 
 /* =========================================================
