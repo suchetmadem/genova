@@ -73,20 +73,23 @@ font-weight: 500 !important;
 opacity: 0.55 !important;
 }
 
-/* Force logo text to pure black */
-.masthead #site-nav.greedy-nav .site-title,
-.masthead #site-nav.greedy-nav .site-title a {
-color: #000 !important;
+/* Render brand as image logo instead of text */
+.masthead #site-nav.greedy-nav .site-title {
+display: none !important;
 }
 
-/* Logo styling + nudge */
-.masthead #site-nav.greedy-nav .site-title a {
-font-size: 1.5rem !important;
-font-weight: 700 !important;
-letter-spacing: -0.03em !important;
+.masthead #site-nav.greedy-nav .site-logo {
+margin-right: auto !important;
 position: relative;
 top: -6px;
 left: -20px;
+}
+
+.masthead #site-nav.greedy-nav .site-logo img {
+display: block;
+width: 150px;
+max-height: 44px;
+height: auto;
 }
 
 /* =========================================================
