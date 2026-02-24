@@ -81,13 +81,9 @@ color: #000 !important;
 
 /* Logo styling + nudge */
 .masthead #site-nav.greedy-nav .site-title a {
-display: block !important;
-width: 150px;
-height: 44px;
-font-size: 0 !important;
-line-height: 0 !important;
-color: transparent !important;
-background: url('/assets/images/logo.png') center / contain no-repeat;
+font-size: 1.5rem !important;
+font-weight: 700 !important;
+letter-spacing: -0.03em !important;
 position: relative;
 top: -6px;
 left: -20px;
